@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
 namespace MultiplicationTable.Pages
@@ -7,10 +8,10 @@ namespace MultiplicationTable.Pages
         private List<Questions> questions;
         private bool showResults;
         private Questions currentQuestion;
-
+        public ElementReference MyProperty { get; set; }
         protected override void OnInitialized()
         {
-           
+
 
             questions = new List<Questions>();
             for (int x = 2; x <= 10; x++)
@@ -32,6 +33,11 @@ namespace MultiplicationTable.Pages
                 showResults = true;
             }
         }
+        private async Task Next()
+        {
+            NextQuestion();
+            await MyProperty.FocusAsync();
+        }
 
         private void Skip()
         {
@@ -41,8 +47,8 @@ namespace MultiplicationTable.Pages
 
         private void CalcResult()
         {
-            var ok = questions.Where(x=>x.IsCorrect == true).ToList();
-            var wrong = questions.Where(x=>x.IsCorrect == false).ToList();
+            var ok = questions.Where(x => x.IsCorrect == true).ToList();
+            var wrong = questions.Where(x => x.IsCorrect == false).ToList();
 
         }
 

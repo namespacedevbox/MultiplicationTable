@@ -8,9 +8,10 @@
         <div class="text-nowrap">
             @currentQuestion.Question
         </div>
-        <input type="tel" @bind="@currentQuestion.Answer" style="width:60px" class="form-control mx-2" autofocus />
-        <button class="btn btn-primary" @onkeydown="@Enter" @onclick="NextQuestion">Next</button>
+        <input @ref="MyProperty" type="tel" @bind="@currentQuestion.Answer" style="width:60px" class="form-control mx-2" autofocus />
     </div>
+    <button class="btn btn-primary w-100" @onkeydown="@Enter" @onclick="Next">Next</button>
+    <br />
     <button @onclick="Skip">Skip</button>
     <button @onclick="CalcResult">CalcResult</button>
 }
