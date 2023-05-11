@@ -61,7 +61,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-T0ocbpaJ5gpyKBjV2BESgQkqq+L\/N3sDqo9JqpPPKyc=",
+      "hash": "sha256-2UuD\/vCeCbvL4rz5h5Z44i0VTaj9bsOiV0eCqkLcVc8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-CrQYCy\/bFwt4KtLHvOaIQwOlb6zMHVFwi8rYc5Uaxrg=",
+      "hash": "sha256-kogf6uWSSLALiJ99EK0rQJ1TLQOg+V0BQQ\/NThL\/nHA=",
       "url": "_framework\/MultiplicationTable.dll"
     },
     {
@@ -205,5 +205,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "RaGCGmOS"
+  "version": "+BHnRH6p"
 };
