@@ -21,7 +21,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-BwYusRtWJorjhzM2spz6oR25q5TBxK9TioF7Hvxr+4I=",
+      "hash": "sha256-+sX4wFwYMOs72gDJUEtlJRPSWmc+PKhEePVTDX1UV5w=",
       "url": "index.html"
     },
     {
@@ -61,11 +61,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-2UuD\/vCeCbvL4rz5h5Z44i0VTaj9bsOiV0eCqkLcVc8=",
+      "hash": "sha256-CmHZys3qEIP7ViDsbBnUmTxjy9OaxQEDsXTSACbIv1s=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-FzAPAqpzcciwlBnGnn0x6v1i25hBnKN6noivfPv+E\/8=",
+      "hash": "sha256-5+\/CSq0VlYuAcTXGfv4jGvOsiGfKft\/LkVKxPJmYD7M=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-kogf6uWSSLALiJ99EK0rQJ1TLQOg+V0BQQ\/NThL\/nHA=",
+      "hash": "sha256-rrhzyoU4FYR8t61JdjRVlvt7judNeXWdpuloDStDjZI=",
       "url": "_framework\/MultiplicationTable.dll"
     },
     {
@@ -177,7 +177,7 @@
       "url": "_framework\/System.Private.Uri.dll"
     },
     {
-      "hash": "sha256-wrR67FdEcjt2CcZDJpkCGqb56bMGqOOt2Vwwvf8zrGI=",
+      "hash": "sha256-8sZAX4cu3mEUREaTuB2UmV8IHOBropHqZXLRPYeeVRg=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -205,5 +205,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "+BHnRH6p"
+  "version": "yo\/4\/O6T"
 };
