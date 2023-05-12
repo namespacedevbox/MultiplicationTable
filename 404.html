@@ -57,17 +57,8 @@
     <script src="_content/Blazor-ApexCharts/js/apex-charts.min.js"></script>
     <script src="_content/Blazor-ApexCharts/js/blazor-apex-charts.js"></script>
     <script>
-        var button = document.querySelector('.btn-bottom');
-        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-        if (isMobile) {
-            window.addEventListener('resize', function () {
-                if (document.activeElement.tagName == 'INPUT' || document.activeElement.tagName == 'TEXTAREA') {
-                    button.style.bottom = 'auto';
-                } else {
-                    button.style.bottom = '0';
-                }
-            });
+        if ("virtualKeyboard" in navigator) {
+            navigator.virtualKeyboard.overlaysContent = true;
         }
     </script>
 </body>

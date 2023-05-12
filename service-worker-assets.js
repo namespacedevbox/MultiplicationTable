@@ -21,7 +21,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-YodOS0qxXNVzEoNfku+I6UZ6T3jzpi0e2HRvinqY6kY=",
+      "hash": "sha256-m25QqoiqtNnYl7YE5IeMGLTMKn0fUfOuIzYBBc0re3k=",
       "url": "index.html"
     },
     {
@@ -61,7 +61,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-lFuWkd0c+l1Mfz8y+Szyz+P9yCNnOBsK6tHbjCMnLDU=",
+      "hash": "sha256-IOXSJmZYMkRrV7yu\/jy7F55+WYu04yNVMKfypU+JtTs=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-EJrMVQlIRXv6bF0aU4dwy8C9RqHdseyp+5+f2gNx+Fo=",
+      "hash": "sha256-wtlwSM8WzAt5Dn6zGgkXOOxxiF9LmKtngSyQuE7S1uE=",
       "url": "_framework\/MultiplicationTable.dll"
     },
     {
@@ -173,7 +173,7 @@
       "url": "_framework\/System.Private.Uri.dll"
     },
     {
-      "hash": "sha256-iQzmx53jr5f\/POA0wDGvnmQIi+wxVsTe5S4DVlsjFWE=",
+      "hash": "sha256-0z5XRxViWnLskVg09f1bUH9YRRZzkHHyH0R3MB02t98=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -209,5 +209,5 @@
       "url": "_content\/Blazor-ApexCharts\/js\/blazor-apex-charts.js"
     }
   ],
-  "version": "xgfah4\/V"
+  "version": "4CYzq5Wc"
 };
