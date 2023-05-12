@@ -5,7 +5,7 @@
       "url": "404.html"
     },
     {
-      "hash": "sha256-\/\/0dxrdQybVkG\/LT8WhfQSpNnidvDpX4q5RRSk5LRbA=",
+      "hash": "sha256-B8tjvbTJTEU5+aIzh9q5Y3a6x6tGt2ZUVNm8AJ8QnyE=",
       "url": "css\/app.css"
     },
     {
@@ -21,7 +21,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-2TA5rG8q\/k\/KskzK\/2C88\/GuYjO\/w8Jb2mEDePfBwBs=",
+      "hash": "sha256-YodOS0qxXNVzEoNfku+I6UZ6T3jzpi0e2HRvinqY6kY=",
       "url": "index.html"
     },
     {
@@ -61,7 +61,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-lFApkpBIk3a3HPavVq+s4fI6\/SO60R68lUGrwkzgNMk=",
+      "hash": "sha256-lFuWkd0c+l1Mfz8y+Szyz+P9yCNnOBsK6tHbjCMnLDU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-EAQDkdPX9RelqdbOZMbMmm9\/e+lJhBQkjTNDIUjJHkY=",
+      "hash": "sha256-EJrMVQlIRXv6bF0aU4dwy8C9RqHdseyp+5+f2gNx+Fo=",
       "url": "_framework\/MultiplicationTable.dll"
     },
     {
@@ -209,5 +209,5 @@
       "url": "_content\/Blazor-ApexCharts\/js\/blazor-apex-charts.js"
     }
   ],
-  "version": "fd13NM+4"
+  "version": "zNhaAf6a"
 };
