@@ -5,7 +5,7 @@
       "url": "404.html"
     },
     {
-      "hash": "sha256-B8tjvbTJTEU5+aIzh9q5Y3a6x6tGt2ZUVNm8AJ8QnyE=",
+      "hash": "sha256-fXJeVcZhRJ0fgmb+fKYNrKikN9tYYeVhzuwYk7\/Umqo=",
       "url": "css\/app.css"
     },
     {
@@ -209,5 +209,5 @@
       "url": "_content\/Blazor-ApexCharts\/js\/blazor-apex-charts.js"
     }
   ],
-  "version": "zNhaAf6a"
+  "version": "xgfah4\/V"
 };
