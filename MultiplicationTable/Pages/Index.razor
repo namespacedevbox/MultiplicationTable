@@ -4,26 +4,32 @@
 
 @if (currentQuestion != null)
 {
-    <div class="d-flex">
-        <div class="text-nowrap">
-            @currentQuestion.Question
+    <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="d-flex align-items-center h-100">
+            <h5 class="text-nowrap mb-0">
+                @currentQuestion.Question
+            </h5>
+            <input @ref="AnswerField" type="tel" @bind="@currentQuestion.Answer" style="width:60px" class="form-control mx-2" autofocus />
+
         </div>
-        <input @ref="MyProperty" type="tel" @bind="@currentQuestion.Answer" style="width:60px" class="form-control mx-2" autofocus />
+        <button class="btn btn-primary mt-auto mb-2 w-100" @onkeydown="@Enter" @onclick="Next">Next</button>
+        <button @onclick="CalcResult">CalcResult</button>
     </div>
-    <button class="btn btn-primary w-100" @onkeydown="@Enter" @onclick="Next">Next</button>
-    <br />
-    <button @onclick="Skip">Skip</button>
-    <button @onclick="CalcResult">CalcResult</button>
 }
 
 @if (showResults)
 {
-    <h4>Результат:</h4>
-    <div>
-        @questions.Select(x=>x.IsCorrect).Count()  <span>+</span>
-        @questions.Select(x=>x.IsCorrect == false).Count()  <span>-</span>
+    <ApexChart TItem="AnswerResult"
+           Title="Result">
 
-
-    </div>
+        <ApexPointSeries TItem="AnswerResult"
+                     Items="AnswerResults"
+                     Name="Gross Value"
+                     SeriesType="SeriesType.Pie"
+                     XValue="@(e => e.Title)"
+                     YAggregate="@(e => e.Sum(e => e.Count))"
+                     OrderByDescending="e=>e.Y"
+                     PointColor="e=> GetPointColor(e)" ShowDataLabels />
+    </ApexChart>
 }
 
