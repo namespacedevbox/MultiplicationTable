@@ -16,7 +16,7 @@ namespace MultiplicationTable.Pages
         protected override void OnInitialized()
         {
             questions = new List<Questions>();
-            for (int x = 2; x <= 2; x++)
+            for (int x = 2; x <= 10; x++)
             {
                 for (int y = 2; y <= 10; y++)
                 {
@@ -33,6 +33,7 @@ namespace MultiplicationTable.Pages
             if (currentQuestion == null)
             {
                 CalcResult();
+                showResults = true;
             }
         }
 
