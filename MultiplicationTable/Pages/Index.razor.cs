@@ -48,12 +48,12 @@ namespace MultiplicationTable.Pages
             AnswerResults.Clear();
             AnswerResults.Add(new AnswerResult
             {
-                Title="Ok",
+                Title = "Ok",
                 Count = questions.Where(x => x.IsCorrect == true).Count(),
             });
             AnswerResults.Add(new AnswerResult
             {
-                Title="Wrong",
+                Title = "Wrong",
                 Count = questions.Where(x => x.IsCorrect == false).Count(),
             });
             var ok = questions.Where(x => x.IsCorrect == true).ToList();
@@ -61,11 +61,11 @@ namespace MultiplicationTable.Pages
             showResults = true;
         }
 
-        public void Enter(KeyboardEventArgs e)
+        public async void Enter(KeyboardEventArgs e)
         {
             if (e.Code == "Enter" || e.Code == "NumpadEnter")
             {
-                NextQuestion();
+                await Next();
             }
         }
 
