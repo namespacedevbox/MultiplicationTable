@@ -57,13 +57,13 @@
     <script src="_content/Blazor-ApexCharts/js/apex-charts.min.js"></script>
     <script src="_content/Blazor-ApexCharts/js/blazor-apex-charts.js"></script>
     <script>
-        const button = document.getElementById("next");
         let height = window.visualViewport.height;
         const viewport = window.visualViewport;
 
         window.visualViewport.addEventListener("resize", resizeHandler);
 
         function resizeHandler() {
+            let button = document.getElementById("next");
             if (!/iPhone|iPad|iPod/.test(window.navigator.userAgent)) {
                 height = viewport.height;
             }
