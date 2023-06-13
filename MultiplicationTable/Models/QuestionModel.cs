@@ -1,14 +1,13 @@
-﻿namespace MultiplicationTable.Pages
+﻿namespace MultiplicationTable.Models
 {
-    public class Questions
+    public class QuestionModel
     {
         public string Question { get; set; }
+        private int CorrectAnswer { get; }
         public int? Answer { get; set; }
         public bool IsCorrect => Answer == CorrectAnswer;
 
-        private int CorrectAnswer { get; }
-
-        public Questions(int x, int y)
+        public QuestionModel(int x, int y)
         {
             Question = $"{x} x {y} =";
             CorrectAnswer = x * y;

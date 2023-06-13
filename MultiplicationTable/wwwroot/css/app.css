@@ -1,15 +1,3 @@
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-h1:focus {
-    outline: none;
-}
-
-a, .btn-link {
-    color: #0071c1;
-}
-
 .content {
     padding-top: 1.1rem;
 }
@@ -88,9 +76,8 @@ a, .btn-link {
         content: var(--blazor-load-percentage-text, "Loading");
     }
 
-.btn-bottom {
+#next {
     position: fixed;
-    left: 0;
-    bottom: auto;
-    width: 100%;
+    width: calc(100% - 30px);
+    bottom: 10px;
 }

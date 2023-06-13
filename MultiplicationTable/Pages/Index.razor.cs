@@ -1,30 +1,31 @@
 using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
+using MultiplicationTable.Extensions;
+using MultiplicationTable.Models;
 
 namespace MultiplicationTable.Pages
 {
     public partial class Index
     {
-        private List<Questions> questions;
-        private bool showResults;
-        private Questions currentQuestion;
-
-        private List<AnswerResult> AnswerResults { get; set; } = new List<AnswerResult>();
-
+        public List<QuestionModel> Questions { get; set; }
+        public QuestionModel CurrentQuestion { get; set; }
+        public DateTime StartDate { get; set; }
+        public bool ShowResults { get; set; }
         public ElementReference AnswerField { get; set; }
-
+        private List<AnswerResult> AnswerResults { get; set; } = new List<AnswerResult>();
+        
         protected override void OnInitialized()
         {
-            questions = new List<Questions>();
+            Questions = new List<QuestionModel>();
             for (int x = 2; x <= 10; x++)
             {
                 for (int y = 2; y <= 10; y++)
                 {
-                    questions.Add(new Questions(x, y));
+                    Questions.Add(new QuestionModel(x, y));
                 }
             }
-            questions.Shuffle();
+            Questions.Shuffle();
             NextQuestion();
+            StartDate = DateTime.Now;
         }
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -34,13 +35,14 @@ namespace MultiplicationTable.Pages
                 await AnswerField.FocusAsync();
             }
         }
+
         private void NextQuestion()
         {
-            currentQuestion = questions.FirstOrDefault(q => q.Answer == null);
-            if (currentQuestion == null)
+            CurrentQuestion = Questions.FirstOrDefault(x => x.Answer == null);
+            if (CurrentQuestion == null)
             {
                 CalcResult();
-                showResults = true;
+                ShowResults = true;
             }
         }
 
@@ -50,32 +52,30 @@ namespace MultiplicationTable.Pages
             await AnswerField.FocusAsync();
         }
 
+        private void CalcElapsedTime()
+        {
+            
+        }
+
         private void CalcResult()
         {
             AnswerResults.Clear();
             AnswerResults.Add(new AnswerResult
             {
                 Title = "Ok",
-                Count = questions.Where(x => x.IsCorrect == true).Count(),
+                Count = Questions.Where(x => x.IsCorrect == true).Count(),
             });
             AnswerResults.Add(new AnswerResult
             {
                 Title = "Wrong",
-                Count = questions.Where(x => x.IsCorrect == false).Count(),
+                Count = Questions.Where(x => x.IsCorrect == false).Count(),
             });
-            var ok = questions.Where(x => x.IsCorrect == true).ToList();
-            var wrong = questions.Where(x => x.IsCorrect == false).ToList();
-            showResults = true;
+            var ok = Questions.Where(x => x.IsCorrect == true).ToList();
+            var wrong = Questions.Where(x => x.IsCorrect == false).ToList();
+            ShowResults = true;
         }
 
-        public async void Enter(KeyboardEventArgs e)
-        {
-            if (e.Code == "Enter" || e.Code == "NumpadEnter")
-            {
-                await Next();
-            }
-        }
-
+      
         private string GetPointColor(AnswerResult order)
         {
             switch (order.Title)
