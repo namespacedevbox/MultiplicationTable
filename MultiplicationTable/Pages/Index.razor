@@ -13,11 +13,11 @@
 @if (currentQuestion != null)
 {
     <div class="d-flex justify-content-center p-3">
-        <div class="d-flex align-items-center h-100">
+        <div class="d-flex align-items-center h-100 overflow-hidden">
             <h5 class="text-nowrap mb-0 me-2">
                 @currentQuestion.Question
             </h5>
-            <input @ref="AnswerField" type="text" inputmode="decimal" class="form-control form-control-lg" @bind="@currentQuestion.Answer" style="width:60px" />
+            <input @ref="AnswerField" type="text" inputmode="decimal" class="form-control form-control-lg" @bind="@currentQuestion.Answer" style="width:90px" />
         </div>
         <button id="next" class="btn btn-primary btn-lg" @onclick="Next">Next</button>
     </div>
