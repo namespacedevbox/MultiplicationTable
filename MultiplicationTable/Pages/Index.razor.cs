@@ -27,6 +27,13 @@ namespace MultiplicationTable.Pages
             NextQuestion();
         }
 
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                await AnswerField.FocusAsync();
+            }
+        }
         private void NextQuestion()
         {
             currentQuestion = questions.FirstOrDefault(q => q.Answer == null);

@@ -7,8 +7,6 @@
         position: fixed;
         width: calc(100% - 30px);
         bottom: 10px;
-        line-height: 40px;
-        text-align: center;
     }
 </style>
 
@@ -19,7 +17,7 @@
             <h5 class="text-nowrap mb-0 me-2">
                 @currentQuestion.Question
             </h5>
-            <input @ref="AnswerField" type="text" inputmode="decimal" class="form-control form-control-lg" @bind="@currentQuestion.Answer" style="width:60px" autofocus />
+            <input @ref="AnswerField" type="text" inputmode="decimal" class="form-control form-control-lg" @bind="@currentQuestion.Answer" style="width:60px" />
         </div>
         <button id="next" class="btn btn-primary btn-lg" @onclick="Next">Next</button>
     </div>
