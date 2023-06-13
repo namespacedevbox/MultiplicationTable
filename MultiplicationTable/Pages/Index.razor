@@ -9,10 +9,10 @@
             <h5 class="text-nowrap mb-0">
                 @currentQuestion.Question
             </h5>
-            <input @ref="AnswerField" type="tel" @bind="@currentQuestion.Answer" style="width:60px" class="form-control mx-2" autofocus />
+            <input @ref="AnswerField" type="text" inputmode=decimal @bind="@currentQuestion.Answer" style="width:60px" class="form-control mx-2" autofocus />
 
         </div>
-        <button class="btn btn-primary mt-auto mb-2 w-100" @onkeydown="@Enter" @onclick="Next">Next</button>
+        <button id="next" class="btn btn-primary mt-auto mb-2 w-100" @onkeydown="@Enter" @onclick="Next">Next</button>
         <button @onclick="CalcResult">CalcResult</button>
     </div>
 
@@ -21,16 +21,16 @@
 @if (showResults)
 {
     <ApexChart TItem="AnswerResult"
-           Title="Result">
+               Title="Result">
 
         <ApexPointSeries TItem="AnswerResult"
-                     Items="AnswerResults"
-                     Name="Gross Value"
-                     SeriesType="SeriesType.Pie"
-                     XValue="@(e => e.Title)"
-                     YAggregate="@(e => e.Sum(e => e.Count))"
-                     OrderByDescending="e=>e.Y"
-                     PointColor="e=> GetPointColor(e)" ShowDataLabels />
+                         Items="AnswerResults"
+                         Name="Gross Value"
+                         SeriesType="SeriesType.Pie"
+                         XValue="@(e => e.Title)"
+                         YAggregate="@(e => e.Sum(e => e.Count))"
+                         OrderByDescending="e=>e.Y"
+                         PointColor="e=> GetPointColor(e)" ShowDataLabels />
     </ApexChart>
 }
 
