@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-l1NjXTXnhHndOjAxPaa26Vmo\/oVLJ7dDmVqUpXd7tWA=",
+      "hash": "sha256-mD7k6fRDThRvp1o09w5IHg8\/s5IQGfPoMuadC5WHr88=",
       "url": "404.html"
     },
     {
@@ -21,7 +21,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-9OHBYNsArPaV9o+uRSWRxdoiWNR3VPoNKCSrxZmcnXU=",
+      "hash": "sha256-OVHcyfpO6CBH7xazZ\/vnShXGu7CRwtmYJizXhe2\/OwM=",
       "url": "index.html"
     },
     {
@@ -61,7 +61,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-eFssyW+vwrM5N7ilLwtiFCBMso5YEsI+l25ui3Fib74=",
+      "hash": "sha256-rJ4UV3kjFX7tOupGf4eNPmwy19NU5zD1sg00hAh4ylc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -69,7 +69,7 @@
       "url": "_framework\/Blazor-ApexCharts.dll"
     },
     {
-      "hash": "sha256-0UmArBffKCusExQrI2M3ST1\/dpWZ50fMO6lyow0PYiM=",
+      "hash": "sha256-HJx\/AyVfzvwFjwFRA5QhmroEFxq\/Z2qAzJC2JJXH+mQ=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-FimYFbnQIP4DyqxqNtrGj0wnwIHnp2xjLQCg7bdhTBI=",
+      "hash": "sha256-fWtEJOukvS54YMRkYO7yhR2g74RqAeB9ViyF8\/vzstI=",
       "url": "_framework\/MultiplicationTable.dll"
     },
     {
@@ -165,7 +165,7 @@
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
-      "hash": "sha256-t5pshYMy0UIYLGPPP8pB2fiCrtB8VAaWtkvNf+c5CjA=",
+      "hash": "sha256-NtIOAZ5cslWShNQjTe2wbHU\/e8wuujdn91w5m7XKc2g=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -209,5 +209,5 @@
       "url": "_content\/Blazor-ApexCharts\/js\/blazor-apex-charts.js"
     }
   ],
-  "version": "NyIOUUvW"
+  "version": "gC7Vmd8y"
 };
