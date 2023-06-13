@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using MultiplicationTable.Models;
 
 <PageTitle>Multiplication Table</PageTitle>
 
@@ -14,7 +15,7 @@
         <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
         </div>
-        <hr/>
+        <hr />
         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar" style="width: 25%"></div>
         </div>
@@ -24,17 +25,23 @@
 
 @if (ShowResults)
 {
-    <ApexChart TItem="AnswerResult"
-               Title="Result">
+    <div class="my-3">
+        <h5>Current date: @DateTime.Now</h5>
+        <h5>Elapsed time: @CalcElapsedTime()</h5>
+        <h5>Correct answers: <span class="text-success">@Questions.Where(x => x.IsCorrect == true).Count()</span></h5>
+        <h5>Incorrect answers: <span class="text-danger">@Questions.Where(x => x.IsCorrect == false).Count()</span></h5>
+    </div>
 
-        <ApexPointSeries TItem="AnswerResult"
+    <ApexChart TItem="AnswerResultModel"
+               Title="">
+
+        <ApexPointSeries TItem="AnswerResultModel"
                          Items="AnswerResults"
                          Name="Gross Value"
                          SeriesType="SeriesType.Pie"
                          XValue="@(e => e.Title)"
                          YAggregate="@(e => e.Sum(e => e.Count))"
                          OrderByDescending="e=>e.Y"
-                         PointColor="e=> GetPointColor(e)" ShowDataLabels />
+                         PointColor="e=> GetPointColor(e)" />
     </ApexChart>
 }
-

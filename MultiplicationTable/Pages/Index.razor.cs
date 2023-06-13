@@ -11,8 +11,8 @@ namespace MultiplicationTable.Pages
         public DateTime StartDate { get; set; }
         public bool ShowResults { get; set; }
         public ElementReference AnswerField { get; set; }
-        private List<AnswerResult> AnswerResults { get; set; } = new List<AnswerResult>();
-        
+        private List<AnswerResultModel> AnswerResults { get; set; }
+
         protected override void OnInitialized()
         {
             Questions = new List<QuestionModel>();
@@ -42,7 +42,6 @@ namespace MultiplicationTable.Pages
             if (CurrentQuestion == null)
             {
                 CalcResult();
-                ShowResults = true;
             }
         }
 
@@ -52,47 +51,42 @@ namespace MultiplicationTable.Pages
             await AnswerField.FocusAsync();
         }
 
-        private void CalcElapsedTime()
+        private string CalcElapsedTime()
         {
-            
+            DateTime currentDate = DateTime.Now;
+            TimeSpan timeDifference = currentDate - StartDate;
+            int elapsedMinutes = (int)timeDifference.TotalMinutes;
+            int elapsedSeconds = (int)timeDifference.TotalSeconds % 60;
+            return $"{elapsedMinutes} min {elapsedSeconds} sec";
         }
 
         private void CalcResult()
         {
-            AnswerResults.Clear();
-            AnswerResults.Add(new AnswerResult
+            AnswerResults = new List<AnswerResultModel>
             {
-                Title = "Ok",
-                Count = Questions.Where(x => x.IsCorrect == true).Count(),
-            });
-            AnswerResults.Add(new AnswerResult
-            {
-                Title = "Wrong",
-                Count = Questions.Where(x => x.IsCorrect == false).Count(),
-            });
-            var ok = Questions.Where(x => x.IsCorrect == true).ToList();
-            var wrong = Questions.Where(x => x.IsCorrect == false).ToList();
+                new AnswerResultModel
+                {
+                    Title = "Correct",
+                    Count = Questions.Where(x => x.IsCorrect == true).Count(),
+                },
+                new AnswerResultModel
+                {
+                    Title = "Incorrect",
+                    Count = Questions.Where(x => x.IsCorrect == false).Count(),
+                }
+            };
+
             ShowResults = true;
         }
 
-      
-        private string GetPointColor(AnswerResult order)
+        private string GetPointColor(AnswerResultModel result)
         {
-            switch (order.Title)
+            return result.Title switch
             {
-                case "Wrong":
-                    return "#e3001b";
-                case "Ok":
-                    return "#00783c";
-                default:
-                    return "";
-            }
+                "Incorrect" => "#e3001b",
+                "Correct" => "#00783c",
+                _ => "",
+            };
         }
-    }
-
-    public class AnswerResult
-    {
-        public string Title { get; set; }
-        public int Count { get; set; }
     }
 }
