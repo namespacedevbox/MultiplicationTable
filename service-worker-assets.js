@@ -29,6 +29,10 @@
       "url": "manifest.json"
     },
     {
+      "hash": "sha256-2wpOKSM0G3ZuGPFfr4EKFQ2rizfVNiH\/zI0Mj++jfr8=",
+      "url": "result.html"
+    },
+    {
       "hash": "sha256-lOCs45frNf+D7me6lKLgUhRCdt4VwHCp9H6Ct+YWzfs=",
       "url": "_framework\/blazor.webassembly.js"
     },
@@ -209,5 +213,5 @@
       "url": "_content\/Blazor-ApexCharts\/js\/blazor-apex-charts.js"
     }
   ],
-  "version": "ZCrTvsCP"
+  "version": "GEJMLpYf"
 };
