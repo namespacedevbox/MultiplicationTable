@@ -65,7 +65,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-lNUeb5hOdZWzxz6pfopJCUGHBVrTrgT5iJ7wcU2eXJs=",
+      "hash": "sha256-Id\/XbkAplqdcgNo91Gb3ZrJQrjowHQ00HaEyxQ3GZ7o=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -73,7 +73,7 @@
       "url": "_framework\/Blazor-ApexCharts.dll"
     },
     {
-      "hash": "sha256-YRrwK7kn5QIhmH+lqeb02gslt4PvrxbCJzC18p8kyIQ=",
+      "hash": "sha256-0UmArBffKCusExQrI2M3ST1\/dpWZ50fMO6lyow0PYiM=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-INxRj8QLGDhl4zVSHaoN\/293TgQ0dGNSyifkorMpNl4=",
+      "hash": "sha256-ftZvBDDSYeLt\/m2GGMeQtulc1smaoFdRsZ4wwu9Y2Og=",
       "url": "_framework\/MultiplicationTable.dll"
     },
     {
@@ -177,7 +177,7 @@
       "url": "_framework\/System.Private.Uri.dll"
     },
     {
-      "hash": "sha256-0z5XRxViWnLskVg09f1bUH9YRRZzkHHyH0R3MB02t98=",
+      "hash": "sha256-TR\/tve00VfgKdBHisT\/UHJ5N0xC0ihBAwiKvXrRnLmY=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -213,5 +213,5 @@
       "url": "_content\/Blazor-ApexCharts\/js\/blazor-apex-charts.js"
     }
   ],
-  "version": "m\/fo1Fpw"
+  "version": "semuSuYP"
 };
