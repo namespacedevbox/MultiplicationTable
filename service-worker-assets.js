@@ -21,7 +21,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-K+4XOYT4vEmH29D8iUvXqTBiDqJjKfbv42SeCGTRcls=",
+      "hash": "sha256-tyopYcQTRbes\/jWJSfaqVhhurOoNEfcHJyuvzRFkwtQ=",
       "url": "index.html"
     },
     {
@@ -213,5 +213,5 @@
       "url": "_content\/Blazor-ApexCharts\/js\/blazor-apex-charts.js"
     }
   ],
-  "version": "GEJMLpYf"
+  "version": "VY2edh+2"
 };
