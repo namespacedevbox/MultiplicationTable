@@ -57,8 +57,17 @@
     <script src="_content/Blazor-ApexCharts/js/apex-charts.min.js"></script>
     <script src="_content/Blazor-ApexCharts/js/blazor-apex-charts.js"></script>
     <script>
-        if ("virtualKeyboard" in navigator) {
-            navigator.virtualKeyboard.overlaysContent = true;
+        const button = document.getElementById("next");
+        let height = window.visualViewport.height;
+        const viewport = window.visualViewport;
+
+        window.visualViewport.addEventListener("resize", resizeHandler);
+
+        function resizeHandler() {
+            if (!/iPhone|iPad|iPod/.test(window.navigator.userAgent)) {
+                height = viewport.height;
+            }
+            button.style.bottom = `${height - viewport.height + 10}px`;
         }
     </script>
 </body>
