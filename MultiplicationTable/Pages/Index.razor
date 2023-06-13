@@ -2,6 +2,16 @@
 
 <PageTitle>Multiplication Table</PageTitle>
 
+<style>
+    #next {
+        position: fixed;
+        width: calc(100% - 30px);
+        bottom: 10px;
+        line-height: 40px;
+        text-align: center;
+    }
+</style>
+
 @if (currentQuestion != null)
 {
     <div class="d-flex justify-content-center p-3">
@@ -14,7 +24,7 @@
         <button id="next" class="btn btn-primary btn-lg" @onclick="Next">Next</button>
     </div>
 
-   @* <div class="d-flex flex-column justify-content-center align-items-center h-100">
+    @* <div class="d-flex flex-column justify-content-center align-items-center h-100">
         <div class="d-flex align-items-center h-100">
             <h5 class="text-nowrap mb-0">
                 @currentQuestion.Question
