@@ -61,7 +61,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-G\/fFHC9R1ePZRHz0g3TjLMW3wUK\/LLHHgPzUkIXDNyU=",
+      "hash": "sha256-tI2qP1e+VA5LHGKLb1yRZw5MF5Nidnq+\/c4BZj9OXVc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-VpzoC9DHbptqq0s1xX7pAQz22hVCpg5I9PKizqjJKLc=",
+      "hash": "sha256-bth2+IkaCUA6RlemTEsrZ1C6NweMSVxmyBsu7r8tUUo=",
       "url": "_framework\/MultiplicationTable.dll"
     },
     {
@@ -209,5 +209,5 @@
       "url": "_content\/Blazor-ApexCharts\/js\/blazor-apex-charts.js"
     }
   ],
-  "version": "xTbZinve"
+  "version": "S5iAUfVe"
 };
